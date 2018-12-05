@@ -12,5 +12,7 @@ namespace ContosoUniversity.Models
         public DbSet<Student> Student { get; set; }
         public DbSet<Enrollment> Enrollment { get; set; }
         public DbSet<Course> Course { get; set; }
+        //DbSet<Enrollment> and DbSet<Course> could be omitted.
+        //EF Core includes them implicitly because the Student entity references them
     }
 }

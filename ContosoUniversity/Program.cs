@@ -22,9 +22,6 @@ namespace ContosoUniversity
                     var context = services.GetRequiredService<SchoolContext>();
                     // using ContosoUniversity.Data; 
                     DbInitializer.Initialize(context);
-
-                    //in production evinronment ensure there is a DB.
-                    //context.Database.EnsureCreated();
                 }
                 catch (Exception ex)
                 {
