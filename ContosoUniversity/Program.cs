@@ -1,4 +1,5 @@
 ﻿using System;
+using ContosoUniversity.Data;
 using ContosoUniversity.Models;  //SchoolContext
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
@@ -20,8 +21,8 @@ namespace ContosoUniversity
                 try
                 {
                     var context = services.GetRequiredService<SchoolContext>();
-                    // using ContosoUniversity.Data; 
-                    DbInitializer.Initialize(context);
+                    // using ContosoUniversity.Data;
+                    DbInitializer.Initialize(context);                 
                 }
                 catch (Exception ex)
                 {
