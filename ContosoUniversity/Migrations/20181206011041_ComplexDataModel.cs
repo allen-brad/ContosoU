@@ -100,7 +100,7 @@ namespace ContosoUniversity.Migrations
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Restrict);
                 });
-
+            
             migrationBuilder.CreateTable(
                 name: "OfficeAssignment",
                 columns: table => new
